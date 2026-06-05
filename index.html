@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veekshith Reddy Ravula — Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#about" class="nav-logo">VR.</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Side dot navigation -->
+<div class="side-nav" id="sideNav">
+  <div class="side-dot active" data-target="about" data-label="About"></div>
+  <div class="side-dot" data-target="skills" data-label="Skills"></div>
+  <div class="side-dot" data-target="experience" data-label="Experience"></div>
+  <div class="side-dot" data-target="projects" data-label="Projects"></div>
+  <div class="side-dot" data-target="education" data-label="Education"></div>
+  <div class="side-dot" data-target="achievements" data-label="Achievements"></div>
+  <div class="side-dot" data-target="contact" data-label="Contact"></div>
+</div>
+
+<!-- ========== HERO / ABOUT ========== -->
+<section id="about">
+  <div class="hero-grid">
+    <div class="hero-photo-wrap reveal">
+      <div class="photo-ring">
+        <img src="profie.jpg" alt="Veekshith Reddy"
+             onerror="this.style.display='none';document.getElementById('photo-fallback').style.display='flex'">
+        <div class="photo-placeholder" id="photo-fallback">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+      <span class="hero-badge">
+        <span class="badge-dot"></span> Open to Work
+      </span>
+    </div>
+
+    <div class="hero-text reveal">
+      <p class="greeting">Hello, I'm</p>
+      <h1>Veekshith<br><span>Reddy Ravula</span></h1>
+      <div class="typewriter-wrap">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        Master's graduate in Advanced Data Analytics with hands-on experience in data analysis, machine learning, and business intelligence. I transform complex datasets into actionable insights using Python, SQL, Power BI, Tableau, and cloud technologies.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3.88</span>
+          <span class="stat-label">GPA</span>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">
+          <i class="fa-solid fa-eye"></i> View My Work
+        </a>
+        <a href="veekshithreddy_data_health_analytics_exp.pdf" download class="btn-outline">
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SKILLS ========== -->
+<div id="skills" class="alt-bg">
+  <div class="section-inner">
+    <p class="section-label">What I know</p>
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skill-categories">
+      <button class="cat-btn active" data-filter="all">All</button>
+      <button class="cat-btn" data-filter="languages">Languages</button>
+      <button class="cat-btn" data-filter="analytics">Analytics</button>
+      <button class="cat-btn" data-filter="ml">ML &amp; AI</button>
+      <button class="cat-btn" data-filter="databases">Databases &amp; Cloud</button>
+      <button class="cat-btn" data-filter="tools">Tools</button>
+    </div>
+
+    <div class="skills-grid" id="skillsGrid"></div>
+  </div>
+</div>
+
+<!-- ========== EXPERIENCE ========== -->
+<section id="experience">
+  <p class="section-label">Where I've worked</p>
+  <h2 class="section-title">Experience</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item reveal">
+      <div class="tl-dot"></div>
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">Health Data Analytics Consultant Intern</div>
+          <div class="exp-company">
+            <i class="fa-solid fa-building"></i> Optum Technology &nbsp;&middot;&nbsp; Remote
+          </div>
+        </div>
+        <span class="exp-date">Apr 2025 – May 2026</span>
+      </div>
+      <ul class="exp-bullets">
+        <li>Analyzed healthcare claims, operational, and enrollment datasets using Python, SQL, and Excel.</li>
+        <li>Performed data cleaning, EDA, and trend analysis on structured healthcare datasets to identify patterns and improve reporting accuracy.</li>
+        <li>Supported ad-hoc analysis, data validation, and quality checks for large healthcare datasets in data warehouse environments.</li>
+        <li>Worked with SQL queries, joins, aggregations, and data transformation to extract and prepare data for reporting.</li>
+        <li>Documented analytical workflows, reporting logic, and data processing steps while following QA standards.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="tl-dot"></div>
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">Data Analyst Intern</div>
+          <div class="exp-company">
+            <i class="fa-solid fa-building"></i> Luxoft India &nbsp;&middot;&nbsp; Bangalore, India
+          </div>
+        </div>
+        <span class="exp-date">Apr 2023 – May 2024</span>
+      </div>
+      <ul class="exp-bullets">
+        <li>Integrated and analyzed enterprise data from ITSM platforms and operational databases to support IT Service Delivery analytics.</li>
+        <li>Developed interactive Power BI dashboards and KPI scorecards for real-time monitoring of SLA compliance and operational metrics.</li>
+        <li>Performed EDA, root cause analysis, and anomaly detection on high-volume datasets to support data-driven decision-making.</li>
+        <li>Built automated ETL and reporting pipelines using Python, Pandas, and SQL, reducing manual reporting effort significantly.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="tl-dot"></div>
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">Software Engineer Trainee</div>
+          <div class="exp-company">
+            <i class="fa-solid fa-building"></i> Synechron INC &nbsp;&middot;&nbsp; Hyderabad, India
+          </div>
+        </div>
+        <span class="exp-date">May 2022 – Dec 2023</span>
+      </div>
+      <ul class="exp-bullets">
+        <li>Assisted in developing, testing, and maintaining software applications under senior developer guidance.</li>
+        <li>Wrote SQL queries and supported data extraction, validation, and reporting activities using relational databases.</li>
+        <li>Supported ETL workflows and basic data pipeline development using Python and SQL.</li>
+        <li>Worked in Agile environments collaborating with cross-functional teams during development and testing.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== PROJECTS ========== -->
+<div id="projects" class="alt-bg">
+  <div class="section-inner">
+    <p class="section-label">What I've built</p>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-icon">✈️</div>
+        <div class="project-name">ETA Change Prediction — American Airlines</div>
+        <p class="project-desc">Built ML models to predict post-departure ETA changes using 2.7M+ operational records. Achieved 80.3% accuracy within ±10 min with Random Forest (MAE: 6.33 min).</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Random Forest</span>
+          <span class="tech-tag">LSTM</span>
+          <span class="tech-tag">Scikit-learn</span>
+          <span class="tech-tag">TensorFlow</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">📊</div>
+        <div class="project-name">Interactive Sales Performance Dashboard</div>
+        <p class="project-desc">Executive-facing Tableau dashboard analyzing 12+ months of sales data. Identified 3 underperforming segments, improving quarterly revenue targeting efficiency by ~15%.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Tableau</span>
+          <span class="tech-tag">Excel</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">🎯</div>
+        <div class="project-name">Predictive Modeling — Nonprofit Donor Targeting</div>
+        <p class="project-desc">Evaluated Gradient Boosting, Random Forest, Decision Trees, and Logistic Regression to predict donor likelihood. Optimized with holdout validation and threshold tuning.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">SAS</span>
+          <span class="tech-tag">Gradient Boosting</span>
+          <span class="tech-tag">Random Forest</span>
+          <span class="tech-tag">Logistic Regression</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">🫁</div>
+        <div class="project-name">Respiration Rate Detection from PPG Signals</div>
+        <p class="project-desc">Processed physiological PPG time-series data and built a 1D-CNN model for respiratory rate prediction using 5-fold cross-validation for healthcare analytics.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">1D-CNN</span>
+          <span class="tech-tag">Tableau</span>
+          <span class="tech-tag">Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">🌤️</div>
+        <div class="project-name">Weather Forecast App</div>
+        <p class="project-desc">Real-time weather application showing conditions across the globe, built with React.js and Vite, consuming live weather data via REST API.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">React.js</span>
+          <span class="tech-tag">Vite</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">REST API</span>
+        </div>
+        <a href="https://veekshith21.github.io/weather_api/" target="_blank" class="project-link">
+          View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">💬</div>
+        <div class="project-name">Random Quote Generator</div>
+        <p class="project-desc">Interactive app that fetches and displays quotes by different categories, built with React.js and Bootstrap for a clean, responsive UI experience.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">React.js</span>
+          <span class="tech-tag">Bootstrap</span>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+        </div>
+        <a href="https://github.com/veekshith21/Random_quote_generator" target="_blank" class="project-link">
+          View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ========== EDUCATION ========== -->
+<section id="education">
+  <p class="section-label">My background</p>
+  <h2 class="section-title">Education</h2>
+
+  <div class="edu-grid">
+    <div class="edu-card reveal">
+      <div class="edu-emoji">🎓</div>
+      <div class="edu-degree">Master's in Advanced Data Analytics</div>
+      <div class="edu-uni">University of North Texas &nbsp;&middot;&nbsp; Denton, Texas</div>
+      <div class="edu-meta">
+        <span class="edu-badge">GPA: 3.88</span>
+        <span class="edu-badge">2024 – Present</span>
+      </div>
+    </div>
+
+    <div class="edu-card reveal">
+      <div class="edu-emoji">🎓</div>
+      <div class="edu-degree">B.Tech in Computer Science &amp; Engineering</div>
+      <div class="edu-uni">IIIT Dharwad &nbsp;&middot;&nbsp; Karnataka, India</div>
+      <div class="edu-meta">
+        <span class="edu-badge">CGPA: 7.5</span>
+        <span class="edu-badge">2020 – 2024</span>
+      </div>
+      <p class="edu-coursework">Coursework: DBMS, OS, CN, OOP</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ACHIEVEMENTS ========== -->
+<div id="achievements" class="alt-bg">
+  <div class="section-inner">
+    <p class="section-label">Recognition</p>
+    <h2 class="section-title">Achievements</h2>
+
+    <div class="ach-grid">
+
+      <div class="ach-card reveal">
+        <div class="ach-icon"><i class="fa-solid fa-trophy"></i></div>
+        <div class="ach-body">
+          <div class="ach-title">Xiaomi Ode2Code 3.0 — Top 50</div>
+          <p class="ach-desc">Secured a top 50 position in this nationwide coding competition, competing through quiz rounds and innovative coding projects among students from E-schools across India (2024–2026).</p>
+        </div>
+      </div>
+
+      <div class="ach-card reveal">
+        <div class="ach-icon"><i class="fa-solid fa-certificate"></i></div>
+        <div class="ach-body">
+          <div class="ach-title">Front-End Development Libraries</div>
+          <p class="ach-desc">Certification demonstrating proficiency in a diverse array of front-end development libraries and tools, significantly expanding expertise in the front-end domain.</p>
+        </div>
+      </div>
+
+      <div class="ach-card reveal">
+        <div class="ach-icon"><i class="fa-solid fa-medal"></i></div>
+        <div class="ach-body">
+          <div class="ach-title">Postman API Fundamentals Student Expert</div>
+          <p class="ach-desc">Certified Postman Student Expert, demonstrating proficiency in API testing, documentation, and development fundamentals.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact">
+  <p class="section-label">Get in touch</p>
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact-grid">
+    <div class="contact-left reveal">
+      <p class="contact-intro">
+        I'm actively seeking Data Analyst, BI Analyst, or AI/Data-focused roles. Whether you have an opportunity or just want to connect — my inbox is open!
+      </p>
+
+      <div class="contact-items">
+        <a href="mailto:veekshith.wf448@gmail.com" class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <span>veekshith.wf448@gmail.com</span>
+        </a>
+        <a href="tel:+18607965102" class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <span>+1 860 796 5102</span>
+        </a>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <span>Denton, Texas</span>
+        </div>
+      </div>
+
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/veekshith-reddy-ravula-65348422a/" target="_blank" class="social-btn" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/veekshith21" target="_blank" class="social-btn" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/veekshith_021" target="_blank" class="social-btn" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://leetcode.com/veekshith_021/" target="_blank" class="social-btn" title="LeetCode">
+          <i class="fa-solid fa-code"></i>
+        </a>
+      </div>
+
+      <a href="veekshithreddy_data_health_analytics_exp.pdf" download class="btn-primary">
+        <i class="fa-solid fa-download"></i> Download Resume
+      </a>
+    </div>
+
+    <div class="contact-right reveal">
+      <div class="contact-card">
+        <div class="cc-emoji">💼</div>
+        <p class="cc-title">Let's work together</p>
+        <p class="cc-sub">Open to full-time &amp; internship opportunities in data &amp; analytics</p>
+        <div class="cc-tags">
+          <span>Data Analyst</span>
+          <span>BI Analyst</span>
+          <span>ML Engineer</span>
+          <span>AI / Data</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <p>Designed &amp; Built by <strong>Veekshith Reddy Ravula</strong> &nbsp;&middot;&nbsp; © 2025</p>
+  <p class="footer-hint">Use <kbd>↑</kbd> <kbd>↓</kbd> arrow keys or the side dots to navigate sections</p>
+</footer>
+
+<!-- ========== SCRIPTS ========== -->
+<script>
+// ---- SKILLS DATA ----
+const skills = [
+  { name: 'Python',              cat: 'languages' },
+  { name: 'SQL',                 cat: 'languages' },
+  { name: 'SAS',                 cat: 'languages' },
+  { name: 'Power BI',            cat: 'analytics' },
+  { name: 'Tableau',             cat: 'analytics' },
+  { name: 'Excel',               cat: 'analytics' },
+  { name: 'Pandas',              cat: 'analytics' },
+  { name: 'NumPy',               cat: 'analytics' },
+  { name: 'EDA',                 cat: 'analytics' },
+  { name: 'Statistical Analysis',cat: 'analytics' },
+  { name: 'Scikit-learn',        cat: 'ml' },
+  { name: 'TensorFlow',          cat: 'ml' },
+  { name: 'PyTorch',             cat: 'ml' },
+  { name: 'NLP',                 cat: 'ml' },
+  { name: 'Transformers',        cat: 'ml' },
+  { name: 'LLMs',                cat: 'ml' },
+  { name: 'MySQL',               cat: 'databases' },
+  { name: 'Azure',               cat: 'databases' },
+  { name: 'Git',                 cat: 'tools' },
+  { name: 'GitHub',              cat: 'tools' },
+  { name: 'Jupyter Notebook',    cat: 'tools' },
+];
+
+function renderSkills(filter) {
+  const grid = document.getElementById('skillsGrid');
+  const list = filter === 'all' ? skills : skills.filter(s => s.cat === filter);
+  grid.innerHTML = list.map((s, i) =>
+    `<div class="skill-chip" style="animation-delay:${i * 0.04}s">${s.name}</div>`
+  ).join('');
+}
+
+document.querySelectorAll('.cat-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderSkills(btn.dataset.filter);
+  });
+});
+
+renderSkills('all');
+
+// ---- TYPEWRITER ----
+const roles = ['Data Analyst', 'Business Analyst', 'ML Engineer', 'BI Developer', 'Data Storyteller'];
+let ri = 0, ci = 0, deleting = false;
+const tw = document.getElementById('typewriter');
+
+function type() {
+  const word = roles[ri];
+  if (!deleting) {
+    tw.textContent = word.slice(0, ci + 1);
+    ci++;
+    if (ci === word.length) { deleting = true; setTimeout(type, 1600); return; }
+    setTimeout(type, 100);
+  } else {
+    tw.textContent = word.slice(0, ci - 1);
+    ci--;
+    if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
+    setTimeout(type, 55);
+  }
+}
+type();
+
+// ---- NAVBAR SCROLL SHADOW ----
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 20);
+  updateActive();
+});
+
+// ---- ACTIVE SECTION TRACKING ----
+const sectionIds = ['about','skills','experience','projects','education','achievements','contact'];
+
+function updateActive() {
+  let current = sectionIds[0];
+  sectionIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 140) current = id;
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+  document.querySelectorAll('.side-dot').forEach(d => {
+    d.classList.toggle('active', d.dataset.target === current);
+  });
+}
+
+// ---- SIDE DOTS CLICK ----
+document.querySelectorAll('.side-dot').forEach(dot => {
+  dot.addEventListener('click', () => {
+    const el = document.getElementById(dot.dataset.target);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+// ---- KEYBOARD NAVIGATION (↑ ↓) ----
+let currentIdx = 0;
+document.addEventListener('keydown', e => {
+  if (['ArrowDown','PageDown'].includes(e.key)) {
+    e.preventDefault();
+    currentIdx = Math.min(currentIdx + 1, sectionIds.length - 1);
+    document.getElementById(sectionIds[currentIdx]).scrollIntoView({ behavior: 'smooth' });
+  }
+  if (['ArrowUp','PageUp'].includes(e.key)) {
+    e.preventDefault();
+    currentIdx = Math.max(currentIdx - 1, 0);
+    document.getElementById(sectionIds[currentIdx]).scrollIntoView({ behavior: 'smooth' });
+  }
+});
+
+// ---- SCROLL REVEAL ----
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ---- MOBILE NAV TOGGLE ----
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+});
+</script>
+</body>
+</html>
